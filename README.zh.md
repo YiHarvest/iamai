@@ -1,29 +1,9 @@
-<p align="center">
-  <img src="docs/_static/brand/iamai-logo-wide.svg" alt="iamai" width="640">
-</p>
-
-<p align="center">
-  <a href="https://pypi.org/project/iamai/"><img src="https://img.shields.io/pypi/v/iamai?color=blue" alt="PyPI"></a>
-  <a href="https://pypi.org/project/iamai/"><img src="https://img.shields.io/pypi/pyversions/iamai" alt="Python"></a>
-  <a href="https://github.com/retrofor/iamai/blob/main/Cargo.toml"><img src="https://img.shields.io/badge/core-rust%20%2B%20pyo3-orange" alt="Rust"></a>
-  <a href="https://github.com/retrofor/iamai/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License"></a>
-  <a href="https://github.com/retrofor/iamai/actions/workflows/check.yml"><img src="https://github.com/retrofor/iamai/actions/workflows/check.yml/badge.svg" alt="CI"></a>
-  <a href="https://iamai.readthedocs.io/"><img src="https://readthedocs.org/projects/iamai/badge/?version=latest" alt="Docs"></a>
-</p>
-
-<p align="center">
-  <strong>跨平台聊天机器人框架，内置 AI Agent 支持。Rust 核心，Python 插件。</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/retrofor/iamai/blob/main/README.md">English</a>
-</p>
 
 ---
 
 ## 概览
 
-iamai 是一个基于 Rust 和 Python 的跨平台聊天机器人框架。高性能的消息引擎由 Rust 实现（通过 PyO3 打包），插件系统使用 Python，同时内置了构建 LLM Agent 所需的基础组件。
+iamai 是一个基于 Rust 和 Python 的跨平台聊天机器人框架。高性能的消息引擎由 Rust 实现，插件系统使用 Python，同时内置了构建 LLM Agent 所需的基础组件。
 
 架构采用三层模式：**Adapter**（平台协议适配）、**Runtime**（插件编排调度）和 **Plugin**（业务逻辑）。适配器将不同平台的协议差异归一化为统一的 `Event`、`Message` 和 `Context` 对象，插件只需编写一次即可跨平台部署。
 
